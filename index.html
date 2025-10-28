@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谁是世界上最美的女孩？</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 主页面容器 -->
+    <div id="main-container" class="container">
+        <div class="content">
+            <h1 class="title">谁是世界上最美的女孩？</h1>
+            <button id="food-button" class="food-button">
+                请点击查看~
+            </button>
+        </div>
+    </div>
+
+    <!-- 视频播放容器 - 全屏播放 -->
+    <div id="video-container" class="video-container hidden">
+        <div class="video-content">
+            <div class="video-header">
+                
+            </div>
+            <video id="food-video" preload="auto" playsinline>
+                <source src="5starwish.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+    </div>
+
+    <!-- 全屏视频容器 -->
+    <div id="fullscreen-video" class="fullscreen-video hidden">
+        <video id="fullscreen-food-video" preload="auto" playsinline>
+            <source src="5starwish.mp4" type="video/mp4">
+            您的浏览器不支持视频播放。
+        </video>
+    </div>
+
+    <!-- 美食推荐结果容器 -->
+    <div id="result-container" class="result-container hidden">
+        <div class="result-card">
+            <h2 id="food-name" class="food-name"></h2>
+            <p id="food-description" class="food-description"></p>
+            <p id="food-nutrition" class="food-nutrition"></p>
+            <button id="again-button" class="again-button">再来一次</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
